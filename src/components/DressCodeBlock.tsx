@@ -1,6 +1,4 @@
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
-import { Shirt, Footprints, Flame, Sparkles, Check } from 'lucide-react';
+import { Flame } from 'lucide-react';
 
 interface DressCodeBlockProps {
   dinoMode: boolean;
@@ -8,17 +6,7 @@ interface DressCodeBlockProps {
   onHoverChange: (isHovered: boolean) => void;
 }
 
-export default function DressCodeBlock({ dinoMode, setDinoMode, onHoverChange }: DressCodeBlockProps) {
-  const [dinoRoar, setDinoRoar] = useState(false);
-
-  const triggerDinoRoar = () => {
-    setDinoRoar(true);
-    setDinoMode(!dinoMode);
-    setTimeout(() => {
-      setDinoRoar(false);
-    }, 2000);
-  };
-
+export default function DressCodeBlock({ dinoMode, onHoverChange }: DressCodeBlockProps) {
   return (
     <section 
       id="dress-code"
@@ -70,34 +58,8 @@ export default function DressCodeBlock({ dinoMode, setDinoMode, onHoverChange }:
             </div>
           </div>
 
-          {/* Dino Mode Activator */}
           <div className="flex flex-col justify-between gap-6 bg-[#1a1a1a] border border-white/10 p-6 md:p-8 rounded-3xl shadow-2xl">
-            <div className="pt-4 border-t border-white/5 mt-auto">
-              <button 
-                onClick={triggerDinoRoar}
-                className={`w-full py-4 px-6 rounded-2xl font-display font-black text-xs uppercase tracking-wider flex items-center justify-center gap-3 transition-all transform hover:scale-[1.01] active:scale-[0.98] shadow-lg ${
-                  dinoMode 
-                    ? 'bg-brand-neon text-black hover:shadow-[0_0_25px_rgba(57,255,20,0.5)]' 
-                    : 'bg-zinc-900 text-white hover:bg-zinc-800 border border-zinc-800'
-                }`}
-              >
-                <span>{dinoMode ? '🦖 РЕЖИМ ДИНОЗАВРА: ВКЛ' : '🦖 НАДЕТЬ КОСТЮМ ДИНОЗАВРА'}</span>
-                {dinoMode && <Check size={16} className="text-black stroke-[3]" />}
-              </button>
-              
-              <AnimatePresence>
-                {dinoRoar && (
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.5, y: 10 }}
-                    animate={{ opacity: 1, scale: 1, y: 0 }}
-                    exit={{ opacity: 0, scale: 0.8, y: -10 }}
-                    className="absolute -top-12 left-1/2 -translate-x-1/2 bg-brand-neon text-black font-display font-black text-xl py-2 px-6 rounded-xl shadow-2xl z-50 pointer-events-none uppercase tracking-widest border border-black"
-                  >
-                    RAWWWR!!! 🦖💥
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
+            <div className="pt-4 border-t border-white/5 mt-auto" />
           </div>
         </div>
 
