@@ -1,0 +1,6 @@
+{
+  "name": "Wedding Afterparty Invitation",
+  "description": "Интерактивное приглашение на второй день свадьбы (свадебный Afterparty mini-site)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
