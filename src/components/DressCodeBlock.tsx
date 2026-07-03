@@ -29,9 +29,8 @@ export default function DressCodeBlock({ dinoMode, onHoverChange }: DressCodeBlo
           <div className="h-1.5 w-24 bg-brand-pink mx-auto mt-4 rounded-full" />
         </div>
 
-        {/* Main Concept Card Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch w-full">
-          {/* Statement */}
+        {/* Main Concept Card */}
+        <div className="w-full">
           <div className="bg-[#1a1a1a] border border-white/10 p-6 md:p-8 rounded-3xl flex flex-col justify-between h-full relative group shadow-2xl">
             <div className="absolute top-0 right-0 w-24 h-24 bg-brand-yellow/5 rounded-bl-full blur-xl pointer-events-none" />
             
@@ -56,10 +55,6 @@ export default function DressCodeBlock({ dinoMode, onHoverChange }: DressCodeBlo
               <span className="px-3.5 py-1.5 border border-white/10 bg-white/5 rounded-full text-[10px] font-mono font-bold uppercase text-brand-pink">#JustFriends</span>
               <span className="px-3.5 py-1.5 border border-white/10 bg-white/5 rounded-full text-[10px] font-mono font-bold uppercase text-brand-yellow">#SummerVibes</span>
             </div>
-          </div>
-
-          <div className="flex flex-col justify-between gap-6 bg-[#1a1a1a] border border-white/10 p-6 md:p-8 rounded-3xl shadow-2xl">
-            <div className="pt-4 border-t border-white/5 mt-auto" />
           </div>
         </div>
 
