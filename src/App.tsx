@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Sparkles, Calendar, MapPin, CheckSquare, Send, Volume2, VolumeX, Flame } from 'lucide-react';
+import { Sparkles, Calendar, MapPin, CheckSquare, Volume2, VolumeX, Flame } from 'lucide-react';
 
 // Import child components
 import ParticlesBackground from './components/ParticlesBackground';
@@ -9,7 +9,6 @@ import ImportantCard from './components/ImportantCard';
 import DressCodeBlock from './components/DressCodeBlock';
 import MapBlock from './components/MapBlock';
 import Checklist from './components/Checklist';
-import RsvpForm from './components/RsvpForm';
 
 export default function App() {
   const [dinoMode, setDinoMode] = useState(false);
@@ -139,7 +138,6 @@ export default function App() {
         <DressCodeBlock dinoMode={dinoMode} setDinoMode={setDinoMode} onHoverChange={setDresscodeHovered} />
         <MapBlock dinoMode={dinoMode} />
         <Checklist dinoMode={dinoMode} />
-        <RsvpForm dinoMode={dinoMode} />
       </main>
 
       {/* Bottom Glassmorphism Navigation Dock */}
@@ -150,7 +148,6 @@ export default function App() {
             { id: 'important-block', icon: Flame, label: 'Важно' },
             { id: 'location', icon: MapPin, label: 'Где' },
             { id: 'checklist', icon: CheckSquare, label: 'Сборы' },
-            { id: 'rsvp', icon: Send, label: 'RSVP' },
           ].map((item, idx) => {
             const Icon = item.icon;
             return (

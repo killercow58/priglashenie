@@ -19,13 +19,6 @@ export default function DressCodeBlock({ dinoMode, setDinoMode, onHoverChange }:
     }, 2000);
   };
 
-  const outfitIdeas = [
-    { emoji: '🦖', text: 'Костюм тираннозавра (идеально)', color: 'border-green-500 bg-green-950/20 text-green-400' },
-    { emoji: '👘', text: 'Твоя любимая домашняя пижама', color: 'border-yellow-500 bg-yellow-950/20 text-yellow-400' },
-    { emoji: '🩳', text: 'Шорты + шлепки (классика пула)', color: 'border-cyan-500 bg-cyan-950/20 text-cyan-400' },
-    { emoji: '👙', text: 'Сразу в купальнике / плавках', color: 'border-pink-500 bg-pink-950/20 text-pink-400' },
-  ];
-
   return (
     <section 
       id="dress-code"
@@ -77,26 +70,9 @@ export default function DressCodeBlock({ dinoMode, setDinoMode, onHoverChange }:
             </div>
           </div>
 
-          {/* Ideas grid & Dino Mode Activator */}
+          {/* Dino Mode Activator */}
           <div className="flex flex-col justify-between gap-6 bg-[#1a1a1a] border border-white/10 p-6 md:p-8 rounded-3xl shadow-2xl">
-            <div className="flex flex-col gap-4">
-              <span className="font-mono text-xs text-brand-yellow uppercase tracking-widest font-bold px-1">[ ИДЕИ ДЛЯ ТВОЕГО ЛУКА ]</span>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {outfitIdeas.map((idea, i) => (
-                  <motion.div
-                    key={i}
-                    whileHover={{ y: -2, scale: 1.02 }}
-                    className={`border p-3.5 rounded-2xl flex items-center gap-3.5 backdrop-blur-sm transition-all duration-300 ${idea.color}`}
-                  >
-                    <span className="text-2xl select-none">{idea.emoji}</span>
-                    <span className="font-mono text-[11px] font-bold leading-tight">{idea.text}</span>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-
-            {/* Dino Mode Activator Button inside */}
-            <div className="pt-4 border-t border-white/5">
+            <div className="pt-4 border-t border-white/5 mt-auto">
               <button 
                 onClick={triggerDinoRoar}
                 className={`w-full py-4 px-6 rounded-2xl font-display font-black text-xs uppercase tracking-wider flex items-center justify-center gap-3 transition-all transform hover:scale-[1.01] active:scale-[0.98] shadow-lg ${
@@ -129,7 +105,7 @@ export default function DressCodeBlock({ dinoMode, setDinoMode, onHoverChange }:
         <div className="mt-8 bg-brand-pink/10 border border-brand-pink/30 p-4 rounded-2xl flex items-center gap-3 text-brand-pink max-w-2xl w-full">
           <Flame size={20} className="shrink-0 animate-pulse" />
           <p className="text-xs font-mono font-bold leading-normal uppercase">
-            ЕДИНСТВЕННОЕ НАРУШЕНИЕ — ЭТО ОТСУТСТВИЕ НАСТРОЕНИЯ НА ЧИЛЛ И КУПАЛЬНИКА В РЮКЗАКЕ!
+            ЕДИНСТВЕННОЕ НАРУШЕНИЕ — ЭТО ОТСУТСТВИЕ НАСТРОЕНИЯ НА ЧИЛЛ!
           </p>
         </div>
       </div>

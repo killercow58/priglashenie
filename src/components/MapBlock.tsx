@@ -120,7 +120,7 @@ export default function MapBlock({ dinoMode }: MapBlockProps) {
             <div className="mt-8 p-4 rounded-2xl bg-zinc-900/60 border border-zinc-800/40 max-w-xl text-left">
               <span className="font-mono text-[10px] text-zinc-500 uppercase tracking-widest font-bold block mb-1">💡 КАК ДОБРАТЬСЯ</span>
               <p className="text-xs text-zinc-400 font-sans leading-relaxed">
-                На машине: в навигатор вбивайте <span className="text-white">«СНТ Радуга»</span> (Ногинский р-н / Щелковское шоссе). 
+                На машине: в навигатор вбивайте <span className="text-white">«СНТ Радуга»</span>. 
                 На такси: отлично вызывается до адреса. Если потеряетесь — пишите / звоните, встретим! 📞
               </p>
             </div>
