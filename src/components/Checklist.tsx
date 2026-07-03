@@ -10,10 +10,8 @@ interface ChecklistProps {
 export default function Checklist({ dinoMode }: ChecklistProps) {
   const [items, setItems] = useState<ChecklistItem[]>([
     { id: 'swimwear', text: '🩲 Плавки или Купальник (Абсолютный Must Have!)', required: true },
-    { id: 'towel', text: '🧖 Полотенце (хотя мы приготовим, лишним не будет)', required: false },
-    { id: 'slippers', text: '🩴 Сменные шлепки / тапочки для бани', required: false },
-    { id: 'mood', text: '🦖 Отличное настроение или дух динозавра', required: true },
-    { id: 'carbon', text: '💊 Активированный уголь / аспирин на утро', required: false },
+    { id: 'slippers', text: '🩴 Сменные шлепки / тапочки', required: false },
+    { id: 'mood', text: '🦖 Отличное настроение', required: true },
   ]);
 
   const [checkedIds, setCheckedIds] = useState<string[]>([]);

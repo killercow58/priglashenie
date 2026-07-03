@@ -113,14 +113,6 @@ export default function HeroSection({ dinoMode }: HeroSectionProps) {
           </h1>
         </div>
         
-        <div className="flex flex-col items-center md:items-end md:text-right shrink-0">
-          <div className="text-[64px] sm:text-[80px] font-black leading-none text-brand-pink tracking-tighter drop-shadow-[0_0_15px_rgba(255,45,85,0.3)]">
-            08.08
-          </div>
-          <div className="text-lg sm:text-2xl font-mono opacity-60 tracking-wider uppercase font-bold">
-            17:00 / СТАРТ
-          </div>
-        </div>
       </motion.div>
 
       {/* Subtitle / Ticket Details */}
