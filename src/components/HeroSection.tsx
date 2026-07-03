@@ -128,7 +128,7 @@ export default function HeroSection({ dinoMode }: HeroSectionProps) {
         variants={itemVariants}
         className="mt-2 text-zinc-300 text-base sm:text-lg md:text-xl max-w-2xl font-medium leading-relaxed"
       >
-        Свадьба <span className="text-white font-black underline decoration-brand-cyan decoration-2 underline-offset-4">Димы и Саши</span> продолжается! 
+        Свадьба <span className="text-white font-black underline decoration-brand-cyan decoration-2 underline-offset-4">Александры и Дмитрия</span> продолжается! 
         Забываем про пафос, официальные костюмы и собираемся на максимальный расслабон только для своих.
       </motion.p>
 

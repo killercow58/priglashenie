@@ -122,7 +122,7 @@ export default function ImportantCard() {
                 БЕЗ ЭТОГО <br/>НЕ ВПУСТИМ
               </h2>
               <p className="text-black font-extrabold text-sm sm:text-base leading-snug">
-                Обязательно: плавки / купальник. Нас ждёт Чан, баня и тотальный расслабон. Полотенца приготовим!
+                Обязательно: плавки / купальник. Просто приходи в удобном формате и наслаждайся атмосферой!
               </p>
             </div>
 
